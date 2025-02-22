@@ -10,13 +10,15 @@ import Sistema from "../../assets/Dashboard/Sistema-atualizado.png";
 import SolicitarHistorico from "../../assets/Dashboard/Solicitar - Histórico.png";
 import SolicitarReembolso from "../../assets/Dashboard/Solicitar - Reembolso.png";
 
-//importando o componente navBar
+
 import NavBar from "../navbar/NavBar.jsx"
 
 function Reembolsos() {
   return (
     <div className={styles.layout}>
+      
     <NavBar />
+    <div className={styles.containerPrincipalReembolso}>
       <header>
         <img src={Home} alt="Vetor de uma casinha" />
         <img src={Seta} alt="Vetor de uma setinha" />
@@ -32,7 +34,7 @@ function Reembolsos() {
           </p>
 
           <section className={styles.containerCards}>
-            <article>
+            <article className={styles.solicitarReembolso}>
               <img
                 src={SolicitarReembolso}
                 alt="ícone para solicitação de reembolso"
@@ -40,12 +42,12 @@ function Reembolsos() {
               <h3> Solicitar Reembolso</h3>
             </article>
 
-            <article>
+            <article className={styles.analises}>
               <img src={Analises} alt="ícone para análises" />
               <h3> Verificar análises</h3>
             </article>
 
-            <article>
+            <article className={styles.solicitarHistorico}>
               <img src={SolicitarHistorico} alt="ícone de histórico" />
               <h3>Histórico</h3>
             </article>
@@ -87,6 +89,7 @@ function Reembolsos() {
 
         </section>
       </main>
+      </div>
     </div>
   );
 }

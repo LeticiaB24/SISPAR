@@ -1,32 +1,59 @@
+@use '../../styles/variaveis' as *;
+
 .navBarEstilo {
   height: 100vh;
-  width: 5%;
-  border: solid;
+  width: 4vw;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
   padding: 1rem 0;
 
-  button {
-    border: solid rgb(255, 0, 149);
-    background-color: #0844C4;
-    width: 60%;
-    height: 5vh;
+   
+  .menuHamburguer {
+    background-color: $cor-azul-secundario;
+    width: 70%;
+    height: 7vh;
     border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .secaoPerfil { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  button {
+    
+    background-color: $cor-azul-secundario;
+    width: 70%;
+    height: 7vh;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
   }
 
   .buttonSair {
-    background-color: #63758D;
+    background-color: $cor-cinza;
+    width: 70%;
+    height: 7vh;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
   }
 
   section {
-    border: solid red;
+    
     width: 100%;
-    height: 40vh;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
+    
   }
+  
 }

@@ -1,10 +1,4 @@
-$cor-azul-primario: #001A3D;
-$cor-azul-secundario: #0844C4;
-$cor-azul-aqua: #00BEDD;
-$cor-borda-cinza: #CBD4E1;
-$cor-grafite:  #23282F;
-
-$fonte: 'Inter', sans-serif;
+@use '../../styles/variaveis' as *;
 
 main {
   display: flex;
@@ -38,9 +32,9 @@ main {
   }
 
   h1 {
-    font-family: $fonte;
-    font-size: 2rem;
-    font-weight: 700;
+    font-family: $fonte_family;
+    font-size: $fonte_grande;
+    font-weight: $peso_maior;
     width: 23vw;
     text-align: center;
     color: $cor-grafite;
@@ -56,9 +50,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: $fonte;
-    font-size: 1rem;
-    font-weight: 700;
+    font-family: $fonte_family;
+    font-size: $fonte_pequena;
+    font-weight: $peso_maior;
   }
 
   form {
@@ -82,9 +76,9 @@ main {
       display: flex;
       align-items: center;
       flex-direction: column;
-      font-size: 1rem;
-      font-family: $fonte;
-      font-weight: 400;
+      font-size: $fonte_pequena;
+      font-family: $fonte_family;
+      font-weight: $peso_menor;
       margin: 8px 0;
     }
 
@@ -100,9 +94,9 @@ main {
         width: 45%;
         height: 8vh;
         border-radius: 6px;
-        font-family: $fonte;
-        font-size: 1rem;
-        font-weight: 700;
+        font-family: $fonte_family;
+        font-size: $fonte_pequena;
+        font-weight: $peso_maior;
         cursor: pointer;
         padding: 12px 13px;
       }
